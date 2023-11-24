@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Task 1: Signup Form -->
+    <form id="signupForm">
+      <h2>Signup Form</h2>
+      <label for="name">Enter Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Enter Your Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Enter Your Passsword:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="button" onclick="submitForm()">Submit</button>
+      <div id ="userData"></div>
+    
+    </form>
+
+    <!-- Task 2: Item Details -->
+    <div class="item-details">
+      <h2>Item Details</h2>
+      <p>Levi's Black Denim Jacket <button onclick="toggleDetails()">Read more</button></p>
+      <div class="details">
+        <p>A black denim jacket is a versatile and timeless piece of clothing. Typically made from durable denim fabric in a sleek black color, it serves as a stylish outerwear option suitable for various occasions. Known for its edgy and casual appeal, a black denim jacket can be effortlessly paired with a range of outfits, from casual tees and jeans to dresses, adding a touch of urban chic to the wearer's look. Its rugged yet fashionable design makes it a wardrobe staple, providing both warmth and a fashionable statement for individuals seeking a cool and contemporary style.
+
+        </p>
+      </div>
+    </div>
+
+    <!-- Task 3: Student Details Table -->
+    <h2>Student Details</h2>
+    <form id="studentForm">
+      <label for="studentName">Name:</label>
+      <input type="text" id="studentName" name="studentName" required>
+      <label for="studentAge">Age:</label>
+      <input type="number" id="studentAge" name="studentAge" required>
+      <button type="button" onclick="addStudent()">Add Student</button>
+    </form>
+
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Student details will be added here dynamically -->
+      </tbody>
+    </table>
+
+    <!-- Edit Form (hidden by default) -->
+    <div class="edit-form" id="editForm">
+      <h3>Edit Student</h3>
+      <label for="editName">Name:</label>
+      <input type="text" id="editName" name="editName" required>
+      <label for="editAge">Age:</label>
+      <input type="number" id="editAge" name="editAge" required>
+      <button type="button" onclick="updateStudent()">Update</button>
+      <button type="button" onclick="cancelEdit()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="./app.js">
+  
+  </script>
+
+</body>
+</html>
